@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "example.micronaut";
+option java_outer_classname = "NettyGrpcBug";
+option objc_class_prefix = "HLW";
+
+package example.micronaut;
+
+service NettyGrpcBugService {
+  rpc send (NettyGrpcBugRequest) returns (NettyGrpcBugReply) {}
+}
+
+message NettyGrpcBugRequest {
+  string name = 1;
+}
+
+message NettyGrpcBugReply {
+  string message = 1;
+}
