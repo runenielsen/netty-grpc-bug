@@ -20,6 +20,7 @@ dependencies {
     implementation("io.micronaut.grpc:micronaut-grpc-runtime")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("javax.annotation:javax.annotation-api")
+// TODO: Comment in to see test working with old version.
 //    implementation("io.netty:netty-codec-http2") {
 //        version {
 //            strictly("4.1.100.Final")
