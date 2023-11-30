@@ -16,18 +16,17 @@ repositories {
 dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+
+//    implementation(platform("io.grpc:grpc-bom:1.59.1"))
     implementation("io.micronaut:micronaut-discovery-core")
     implementation("io.micronaut.grpc:micronaut-grpc-runtime")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("javax.annotation:javax.annotation-api")
-// TODO: Comment in to see test working with old version.
-//    implementation("io.netty:netty-codec-http2") {
-//        version {
-//            strictly("4.1.100.Final")
-//        }
-//    }
+
     compileOnly("io.micronaut:micronaut-http-client")
+
     runtimeOnly("ch.qos.logback:logback-classic")
+
     testImplementation("io.micronaut:micronaut-http-client")
 }
 
